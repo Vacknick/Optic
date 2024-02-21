@@ -1,0 +1,16 @@
+DiscardNonMatching;
+Rule {
+	Matches {
+		Domain("|snopes.com|"),
+	},
+	Matches {
+		Domain("|politifact.com|"),
+	},
+	Matches {
+		Domain("|factcheck.org|"),
+	},
+	Action(Boost(0))
+};
+Like(Site("snopes.com"));
+Like(Site("politifact.com"));
+Like(Site("factcheck.org"));
